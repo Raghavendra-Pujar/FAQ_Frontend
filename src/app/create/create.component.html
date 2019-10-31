@@ -1,0 +1,59 @@
+
+
+<body>
+
+         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a class="navbar-brand" href="#">FAQ</a>
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" (click) = "logout()">Logout</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+
+
+
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-10 offset-1 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <h1>Create FAQ</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input id="title" type="text" name="title" [(ngModel)]="title" placeholder="Give the title to FAQ" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea id="content" type="text" rows="5" name="description" [(ngModel)]="description" placeholder="Type the Content of the FAQ" class="form-control"></textarea>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="submit" (click)="createFaq()">Create</button>
+                    </div>
+                </form>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>

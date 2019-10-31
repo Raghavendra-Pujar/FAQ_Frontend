@@ -1,0 +1,60 @@
+
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">FAQ</a>
+    
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-10 offset-1 col-md-6 offset-md-3 col-sm-10 offset-sm-1">
+        <h1>Login</h1>
+        <form  ngNativeValidate>
+          <div class="form-group">
+            <label for="lemail">UserName</label>
+            <input required
+              type="text" class="form-control" id="userName"  name="userName" [(ngModel)]="userName" placeholder="Enter UserName">
+          </div>
+          <div class="form-group">
+            <label for="lpassword">Password</label>
+            <input required  type="password"
+              class="form-control" id="password" name="password" [(ngModel)]="password" placeholder="Enter Password">
+          </div>
+          <div class="form-group">
+            <button type="submit" (click)="login()">Log In</button>
+          </div>
+
+        </form>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</body>
+

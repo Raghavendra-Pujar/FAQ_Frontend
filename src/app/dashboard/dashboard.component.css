@@ -1,0 +1,37 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body{
+    background: url('../../assets/background.jpeg') center center no-repeat;
+    opacity: 0.85;
+    height: 100vh;
+}
+
+.btnContainer button{
+    background-color:#1a1217;
+    color: #fff;
+    font-size: 18px;
+    margin: 3vh 2vh;
+    width: auto;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    transition: border 0.3s linear 0.1s;
+    }
+
+    button:hover {
+        border: 3px solid deepskyblue;
+        cursor: pointer;
+        }
+
+.createbtn button{
+    background: #1a1217;
+    color: #fff;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: border 0.3s linear 0.1s;
+}
